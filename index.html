@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🌻 Regalo de Flores Amarillas 🌻</title>
-
+    
     <style>
         /* Variables de color personalizables */
         :root {
@@ -45,7 +44,7 @@
             right: 0;
             bottom: 0;
             background-image: radial-gradient(circle at 20% 50%, rgba(255, 213, 74, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(158, 157, 137, 0.1) 0%, transparent 50%);
+                              radial-gradient(circle at 80% 20%, rgba(158, 157, 137, 0.1) 0%, transparent 50%);
             pointer-events: none;
             z-index: -1;
         }
@@ -75,15 +74,8 @@
         }
 
         @keyframes shimmer {
-
-            0%,
-            100% {
-                transform: translateX(-100%) translateY(-100%) rotate(45deg);
-            }
-
-            50% {
-                transform: translateX(0%) translateY(0%) rotate(45deg);
-            }
+            0%, 100% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            50% { transform: translateX(0%) translateY(0%) rotate(45deg); }
         }
 
         .title {
@@ -123,25 +115,11 @@
             align-items: center;
         }
 
-        .flower:nth-child(1) {
-            animation-delay: 0.2s;
-        }
-
-        .flower:nth-child(2) {
-            animation-delay: 0.4s;
-        }
-
-        .flower:nth-child(3) {
-            animation-delay: 0.6s;
-        }
-
-        .flower:nth-child(4) {
-            animation-delay: 0.8s;
-        }
-
-        .flower:nth-child(5) {
-            animation-delay: 1s;
-        }
+        .flower:nth-child(1) { animation-delay: 0.2s; }
+        .flower:nth-child(2) { animation-delay: 0.4s; }
+        .flower:nth-child(3) { animation-delay: 0.6s; }
+        .flower:nth-child(4) { animation-delay: 0.8s; }
+        .flower:nth-child(5) { animation-delay: 1s; }
 
         .flower:hover {
             transform: scale(1.1) rotate(5deg);
@@ -153,7 +131,6 @@
                 opacity: 0;
                 transform: scale(0.3) translateY(50px);
             }
-
             to {
                 opacity: 1;
                 transform: scale(1) translateY(0);
@@ -161,25 +138,15 @@
         }
 
         @keyframes sway {
-
-            0%,
-            100% {
-                transform: scale(1.1) rotate(3deg);
-            }
-
-            50% {
-                transform: scale(1.1) rotate(-3deg);
-            }
+            0%, 100% { transform: scale(1.1) rotate(3deg); }
+            50% { transform: scale(1.1) rotate(-3deg); }
         }
 
         /* === CAMBIO REALIZADO AQUÍ === */
         .flower img {
-            width: clamp(80px, 10vw, 110px);
-            /* Ajustamos el tamaño para las imágenes reales */
-            height: auto;
-            /* Mantenemos la proporción de la imagen */
-            filter: drop-shadow(0 5px 15px rgba(150, 150, 100, 0.3));
-            /* Sombra más sutil */
+            width: clamp(80px, 10vw, 110px); /* Ajustamos el tamaño para las imágenes reales */
+            height: auto; /* Mantenemos la proporción de la imagen */
+            filter: drop-shadow(0 5px 15px rgba(150, 150, 100, 0.3)); /* Sombra más sutil */
             object-fit: contain;
         }
 
@@ -365,7 +332,6 @@
                 opacity: 1;
                 transform: translateY(-100px) rotate(0deg);
             }
-
             100% {
                 opacity: 0;
                 transform: translateY(100vh) rotate(360deg);
@@ -394,7 +360,6 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -406,16 +371,16 @@
             .gift-container {
                 padding: 30px 20px;
             }
-
+            
             .flowers-garden {
                 gap: 15px;
             }
-
+            
             .card-buttons {
                 flex-direction: column;
                 align-items: center;
             }
-
+            
             .btn-secondary {
                 width: 200px;
             }
@@ -423,10 +388,7 @@
 
         /* Reducción de movimiento */
         @media (prefers-reduced-motion: reduce) {
-
-            *,
-            *::before,
-            *::after {
+            *, *::before, *::after {
                 animation-duration: 0.01ms !important;
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
@@ -439,27 +401,31 @@
     <div class="gift-container" role="main">
         <h1 class="title">🌻 Flores para ti 🌻</h1>
         <p class="subtitle">Un pequeño regalo digital lleno de cariño</p>
-
+        
         <div class="flowers-garden" role="img" aria-label="Jardín de flores amarillas reales">
             <div class="flower" tabindex="0" role="button" aria-label="Girasol">
-                <img src="iagenes/pngwing.com.png" alt="Te amo">
+                <img src="https://i.ibb.co/9gXyqK6/real-sunflower.png" alt="Girasol real">
             </div>
-
+            
             <div class="flower" tabindex="0" role="button" aria-label="Tulipán amarillo">
-                <img src="iagenes/pngwing.com.png" alt="me encantas">
+                <img src="https://i.ibb.co/d2Xn4pS/real-tulip.png" alt="Tulipán amarillo real">
             </div>
-
+            
             <div class="flower" tabindex="0" role="button" aria-label="Rosa amarilla principal">
-                <img src="iagenes/pngwing.com.png" alt="eres la mejor">
+                <img src="https://i.ibb.co/mGWt2Y7/real-rose.png" alt="Rosa amarilla real">
             </div>
-
+            
             <div class="flower" tabindex="0" role="button" aria-label="Narciso amarillo">
-                <img src="iagenes/pngwing.com.png" alt="demasiado hermosa">
+                <img src="https://i.ibb.co/5MvC27v/real-daffodil.png" alt="Narciso amarillo real">
             </div>
-
+            
             <div class="flower" tabindex="0" role="button" aria-label="Gerbera amarilla">
-                <img src="iagenes/pngwing.com.png" alt="niña preciosa">
+                 <img src="https://i.ibb.co/bF9p272/real-gerbera.png" alt="Gerbera amarilla real">
             </div>
+        </div>
+
+        <div class="message-input-container">
+            <input type="text" class="message-input" placeholder="Escribe un mensaje personalizado (opcional)" maxlength="200" aria-label="Mensaje personalizado">
         </div>
 
         <button class="open-gift-btn" onclick="openGift()" aria-label="Abrir regalo de flores">
@@ -473,17 +439,19 @@
         <button class="close-btn" onclick="closeGift()" aria-label="Cerrar tarjeta">&times;</button>
         <h3 id="card-title">💛 Mensaje especial 💛</h3>
         <p id="gift-message"></p>
-        
+        <div class="card-buttons">
+            <button class="btn-secondary" onclick="shareMessage()" aria-label="Compartir mensaje">🔗 Compartir</button>
+            <button class="btn-secondary" onclick="newMessage()" aria-label="Crear nuevo mensaje">✍️ Nuevo mensaje</button>
         </div>
     </div>
 
     <div class="notification" id="notification">
-    </div>
+        </div>
 
     <script>
         // Configuración personalizable
         const defaultMessage = "🌻 Estas flores amarillas son para recordarte lo especial que eres. Como el sol que ilumina cada día, tu sonrisa hace que todo sea más hermoso. Espero que este pequeño detalle digital te arranque una sonrisa y sepas que alguien piensa en ti con mucho cariño. 💛";
-
+        
         let isGiftOpen = false;
 
         // Obtener mensaje de la URL o usar el predeterminado
@@ -496,17 +464,17 @@
         function openGift() {
             const customMessage = document.querySelector('.message-input').value.trim();
             const finalMessage = customMessage || getMessageFromURL();
-
+            
             document.getElementById('gift-message').textContent = finalMessage;
             document.querySelector('.overlay').classList.add('show');
             document.querySelector('.gift-card').classList.add('show');
-
+            
             isGiftOpen = true;
-
+            
             // Efectos de sonido y pétalos
             playOpenSound();
             createPetals();
-
+            
             // Accesibilidad: focus en la tarjeta
             document.querySelector('.gift-card').focus();
         }
@@ -517,19 +485,19 @@
             document.querySelector('.gift-card').classList.remove('show');
             isGiftOpen = false;
         }
-
+        
         // ... (el resto del script no necesita cambios)
     </script>
-
+    
     <script>
         // (Continúa el script original desde aquí...)
-
+        
         // Función para compartir el mensaje
         function shareMessage() {
             const customMessage = document.querySelector('.message-input').value.trim();
             const messageToShare = customMessage || defaultMessage;
             const url = `${window.location.origin}${window.location.pathname}?mensaje=${encodeURIComponent(messageToShare)}`;
-
+            
             navigator.clipboard.writeText(url).then(() => {
                 showNotification('¡Enlace copiado! Ahora puedes compartirlo.');
             }, () => {
@@ -559,19 +527,19 @@
             const audioContext = new (window.AudioContext || window.webkitAudioContext)();
             const oscillator = audioContext.createOscillator();
             const gainNode = audioContext.createGain();
-
+            
             oscillator.connect(gainNode);
             gainNode.connect(audioContext.destination);
-
+            
             gainNode.gain.setValueAtTime(0, audioContext.currentTime);
             gainNode.gain.linearRampToValueAtTime(0.3, audioContext.currentTime + 0.05);
-
+            
             oscillator.type = 'sine';
             oscillator.frequency.setValueAtTime(523.25, audioContext.currentTime); // C5
             oscillator.frequency.exponentialRampToValueAtTime(783.99, audioContext.currentTime + 0.2); // G5
-
+            
             gainNode.gain.exponentialRampToValueAtTime(0.00001, audioContext.currentTime + 0.5);
-
+            
             oscillator.start(audioContext.currentTime);
             oscillator.stop(audioContext.currentTime + 0.5);
         }
@@ -580,17 +548,17 @@
         function createPetals() {
             const petalCount = 20;
             const petalContainer = document.body;
-
+            
             for (let i = 0; i < petalCount; i++) {
                 const petal = document.createElement('div');
                 petal.className = 'petal';
                 petal.innerHTML = `<svg viewBox="0 0 10 10"><path d="M5 0 C0 5, 0 10, 5 10 C10 10, 10 5, 5 0 Z" fill="rgba(255, 213, 74, ${Math.random() * 0.5 + 0.5})"/></svg>`;
-
+                
                 petal.style.left = `${Math.random() * 100}vw`;
                 petal.style.animation = `petalFall ${Math.random() * 5 + 5}s linear ${Math.random() * 2}s forwards`;
-
+                
                 petalContainer.appendChild(petal);
-
+                
                 petal.addEventListener('animationend', () => {
                     petal.remove();
                 });
@@ -608,14 +576,12 @@
         window.addEventListener('load', () => {
             const initialMessage = getMessageFromURL();
             if (initialMessage !== defaultMessage) {
-                document.getElementById('gift-message').textContent = initialMessage;
-                document.querySelector('.overlay').classList.add('show');
-                document.querySelector('.gift-card').classList.add('show');
-                isGiftOpen = true;
+                 document.getElementById('gift-message').textContent = initialMessage;
+                 document.querySelector('.overlay').classList.add('show');
+                 document.querySelector('.gift-card').classList.add('show');
+                 isGiftOpen = true;
             }
         });
     </script>
 </body>
-
-
 </html>
